@@ -1,0 +1,44 @@
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: #000;
+  left: 0;
+  transition: all 0.3s;
+}
+
+.hamburger-top {
+  top: 0px;
+}
+
+.hamburger-middle {
+  top: 8px;
+}
+
+.hamburger-bottom {
+  top: 16px;
+}
+
+/* When clicking the menu: animate the lines into X */
+.hamburger.open .hamburger-top {
+  transform: rotate(45deg);
+  top: 8px;
+}
+
+.hamburger.open .hamburger-middle {
+  opacity: 0;
+}
+
+.hamburger.open .hamburger-bottom {
+  transform: rotate(-45deg);
+  top: 8px;
+}

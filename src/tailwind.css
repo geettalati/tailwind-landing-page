@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brightRed: #f25f3a; /* your red color */
+  --color-darkGrayishBlue: #2d3748;
+}
